@@ -1,14 +1,15 @@
-const reloj = document.querySelector(".tiempo");
+const clock = document.querySelector(".time_clock");
 
-const getHora = () => {
-    const objetofecha = new Date();
-    const elementos = {
-        hora : objetofecha.getHours(),
-        minutos : objetofecha.getMinutes(),
-        segundos : objetofecha.getSeconds(),
+const getTimeClock = () => {
+    const objectDate = new Date();
+    const elements = {
+        hour: objectDate.getHours(),
+        minutes: objectDate.getMinutes(),
+        seconds: objectDate.getSeconds(),
     }
 
-    reloj.innerHTML = `${elementos.hora} hrs : ${elementos.minutos} min : ${elementos.segundos} seg`;
+    clock.innerHTML = `${elements.hour
+        } hrs : ${elements.minutes} min : ${elements.seconds} seg`;
 };
 
-setInterval(getHora,1000);
+setInterval(getTimeClock, 1000);

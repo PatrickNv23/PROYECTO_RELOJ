@@ -8,26 +8,36 @@
 
 html,body{
     background-color: #7FB3D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contenedor{
+.section_clock{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container_clock{
     background-color: black;
     width: 400px;
     height: 300px;
     text-align: center;
-    margin-top: 150px;
-    margin-left: 35%;
     border: 3px solid white;
     border-radius: 25px;
     opacity: 0.7;
 
 }
 
-.titulo{
+.title_clock{
     padding-top: 80px;
     padding-bottom: 50px;
 }
 
-.tiempo{
+.time_clock{
     font-size: 30px;
 }
